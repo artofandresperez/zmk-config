@@ -60,11 +60,11 @@ As such, those are in use within the default layer at this time.*/
 
         mirror_layer {
             bindings = <
-&trans  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                     &trans  &trans          &trans    &trans        &trans     &trans
-&trans  &kp P     &kp O    &kp I      &kp U   &kp Y                      &trans  &trans          &trans    &trans        &trans     &trans
-&trans  &kp SEMI  &kp L    &kp K      &kp J   &kp H                      &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &kp DEL    &trans  &trans  &trans          &trans    &trans        &trans     &trans
-&trans  &trans    &trans   &trans     &trans  &trans  &trans     &trans  &trans  &trans          &trans    &trans        &trans     &trans
+&trans  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                     &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &kp P     &kp O    &kp I      &kp U   &kp Y                      &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &kp SEMI  &kp L    &kp K      &kp J   &kp H                      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &kp DEL    &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans    &trans   &trans     &trans  &trans  &trans     &trans  &trans    &trans    &trans        &trans     &trans  &trans
             >;
         };
 
