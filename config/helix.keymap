@@ -70,11 +70,11 @@ As such, those are in use within the default layer at this time.*/
 
         symbol_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans    &trans           &trans                                               &trans             &trans     &trans      &trans         &kp PLUS          &kp EQUAL
+&trans  &trans         &trans         &trans    &trans           &trans                                               &trans             &trans     &trans      &trans         &trans            &trans
+&trans  &trans         &trans         &trans    &trans           &trans                                               &trans             &trans     &trans      &trans         &trans            &trans
+&trans  &kp LESS_THAN  &kp BACKSLASH  &kp PIPE  &kp KP_SUBTRACT  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp UNDER  &kp PERIOD  &kp KP_DIVIDE  &kp GREATER_THAN  &trans
+&trans  &trans         &trans         &trans    &trans           &trans            &trans            &trans           &trans             &trans     &trans      &trans         &trans            &trans
             >;
         };
 
