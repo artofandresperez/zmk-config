@@ -27,7 +27,11 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LS(E) &kp LS(R) &kp LS(F) &kp LS(V) &kp LS(O) &kp LS(L) &tog 4>;
+                <&kp E &kp R &kp F &kp V &kp O &kp L>,
+                <&macro_release>,
+                <&kp E &kp R &kp F &kp V &kp O &kp L>,
+                <&macro_tap>,
+                <&tog 4>;
 
             label = "PLOVER_TOGGLE";
         };
