@@ -21,6 +21,18 @@ However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'ei
 As such, those are in use within the default layer at this time.*/
 
 / {
+    macros {
+        plover_toggle: plover_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(E) &kp LS(R) &kp LS(F) &kp LS(V) &kp LS(O) &kp LS(L) &tog 4>;
+
+            label = "PLOVER_TOGGLE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -53,7 +65,7 @@ As such, those are in use within the default layer at this time.*/
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F10                             &kp F11            &kp F6           &kp F7           &kp F8           &kp F9           &kp F12
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &ext_power EP_TOG  &none            &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
 &bt BT_NXT  &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans        &trans                              &rgb_ug RGB_EFR    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &none            &none
-&bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans             &trans           &trans           &trans           &trans           &to 4
+&bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans             &trans           &trans           &trans           &trans           &plover_toggle
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans             &trans           &trans           &trans           &trans           &trans
             >;
         };
@@ -84,7 +96,7 @@ As such, those are in use within the default layer at this time.*/
 &none  &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U   &kp I   &kp O   &kp P     &kp LBKT
 &none  &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J   &kp K   &kp L   &kp SEMI  &kp APOS
 &none  &none   &none   &none   &none   &none   &none    &none  &none   &none   &none   &none   &none     &none
-&none  &none   &none   &none   &kp C   &kp V   &none    &none  &kp N   &kp M   &none   &none   &none     &to 0
+&none  &none   &none   &none   &kp C   &kp V   &none    &none  &kp N   &kp M   &none   &none   &none     &plover_toggle
             >;
         };
     };
